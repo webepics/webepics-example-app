@@ -1,0 +1,44 @@
+{
+  "name": "CSS",
+  "version": "0.0.0",
+  "description": "cs-studio replacement prototype",
+  "main": "index.html",
+  "scripts": {
+    "build": "globify 'askap-js-es2015/**/*.js' -t [babelify] -o 'askap-js/*.js'",
+    "js:watch": "onchange 'askap-js-es2015/*.js' -v -- npm run build",
+    "build:watch": "parallelshell 'npm run js:watch'"
+  },
+  "author": "Xinyu Wu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "globify": "^2.2.0",
+    "jQuery": "^1.7.4",
+    "nodemon": "^1.12.1",
+    "onchange": "^3.2.1"
+  },
+  "dependecies": {
+    "react-toggle-switch": "^3.0.0",
+    "react-router": "^4.2.0",
+    "react": "^16.0.0",
+    "jquery": "^3.2.1",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "dependencies": {
+    "jsdom": "^13.0.0",
+    "location": "0.0.1",
+    "navigator": "^1.0.1",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-router-dom": "^4.3.1",
+    "react-table": "^6.8.6",
+    "react-toggle-switch": "^3.0.4",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

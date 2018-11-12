@@ -1,0 +1,104 @@
+body {
+	font-family: "RobotoDraft", "Roboto", sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+
+.askap label {
+	width: 100%;
+	text-align: right;
+	font-weight: normal;
+}
+
+.askap .disconnected {
+	width: 100%;
+	background-color: magenta;
+}
+
+.askap .INVALID {
+	width: 100%;
+	background-color: #E57373;
+}
+
+.askap .summary-menu {
+	float: left;
+	width: 15%;
+	margin-left: 10px;
+    margin-top: 10px;
+}
+
+.askap .summary-menu span {
+    font-size: 150%;
+    color: orangered;
+}
+
+
+.askap .summary-menu .showHeart {
+    display: block;
+}
+
+.askap .summary-menu .hideHeart {
+    display: none;
+}
+
+.askap .summary-menu ul {
+	padding-left: 10px;
+    list-style: none;
+    font-size: 110%;
+}
+
+.askap .summary-table {
+	float: right;
+	width: 80%;
+}
+
+.askap .ReactTable {
+    margin: 5px;
+}
+
+.askap .ReactTable .rt-thead {
+	font-weight: bold;
+}
+.askap .ReactTable .-headerGroups {
+	font-size: 150%;
+}
+
+.askap input {
+    margin: 10px 5px 5px 5px;
+}
+.askap p {
+	display: inline;
+    margin: 10px 5px 0px 10px;
+    font-size: 110%;
+    margin: 10px 5px 5px 5px;
+}
+
+.askap .alarm-menu .alarm-menu-item {
+	margin-bottom: 15px;	
+}
+
+.askap .alarm-menu .alarm-menu-item div {
+	float: right;
+    width: 40%;
+}
+
+.askap .alarm-menu .alarm-menu-item div label {
+	text-align: center;
+}
+
+.askap .alarm-menu .NONE {
+	background: #66BB6A;
+}
+
+.MINOR {
+	background: #FDD835;
+}
+
+.MAJOR {
+	background: #E57373;
+}
+
+.tooltip .tooltiptext {
+	font-size: 150%;
+}

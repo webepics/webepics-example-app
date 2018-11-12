@@ -1,0 +1,32 @@
+{
+  "name": "CSS",
+  "version": "0.0.0",
+  "description": "cs-studio replacement prototype",
+  "main": "index.html",
+  "scripts": {
+    "build": "browserify -t [babelify] askap-js-es2015/BaseWidget.js -o askap-js/BaseWidget.js & babel askap-js-es2015/WSManager.js -o askap-js/WSManager.js  & browserify -t [babelify] askap-js-es2015/widgets.js -o askap-js/widgets.js & browserify -t [babelify] askap-js-es2015/TableWidget.js -o askap-js/TableWidget.js & browserify -t [babelify] askap-js-es2015/combined.js -o askap-js/combined.js & browserify -t [babelify] askap-js-es2015/apps.js -o askap-js/apps.js",
+    "js:watch": "onchange 'askap-js-es2015/*.js' -v -- npm run build",
+    "build:watch": "parallelshell 'npm run js:watch'"
+  },
+  "author": "Xinyu Wu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "jQuery": "^1.7.4",
+    "nodemon": "^1.12.1",
+    "onchange": "^3.2.1"
+  },
+  "dependecies": {
+    "react-toggle-switch": "^3.0.0",
+    "react-router": "^4.2.0",
+    "react": "^16.0.0",
+    "jquery": "^3.2.1",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
